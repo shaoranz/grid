@@ -23,9 +23,19 @@ footer{
 	overflow: hidden;
 }
 
+@media all and (min-width:360px){
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(9,350px);
+		grid-row-gap:0px;
 
+	}
+	.img-one, .img-two, .img-three, .img-four, .img-five, .img-six, .img-seven, .img-eight, .img-nine{
+		grid-column: 1 / span 1;
+	}
+}
 
-@media all and (min-width:720px){
+@media screen and (min-width:720px){
 	.container{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(6,350px);
